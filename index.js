@@ -12,7 +12,7 @@ const port = process.env.PORT || 3000;
 const url = `mongodb+srv://${process.env.MONGO_USERNAME}:${process.env.MONGO_PASSWORD}@book-management.mqnhvx0.mongodb.net/?retryWrites=true&w=majority`;
 
 // Database name
-const dbName = 'book-management'; 
+const dbName = process.env.MONGO_DB; 
 
 // Reusable database connection
 let db;
